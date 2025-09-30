@@ -1,0 +1,30 @@
+
+CIFAR-10 CNN Training Summary
+Generated: 2025-09-28 16:14:29
+==================================================
+
+Model Architecture:
+- 2-Layer CNN for CIFAR-10 classification
+- Input: 32x32x3 RGB images
+- Conv Layer 1: 32 filters, 3x3 kernel + MaxPool
+- Conv Layer 2: 64 filters, 3x3 kernel + MaxPool
+- Dense: 64 units + Dropout(0.5)
+- Output: 10 classes (softmax)
+
+Training Configuration:
+- Epochs: 3
+- Batch Size: 64
+- Training Time: 0:00:24.927900
+
+Final Results:
+- Test Loss: 1.2057
+- Test Accuracy: 0.5686 (56.86%)
+
+Training History:
+- Final Training Loss: 1.3647
+- Final Training Accuracy: 0.5123
+- Final Validation Loss: 1.2163
+- Final Validation Accuracy: 0.5786
+
+Best Validation Accuracy: 0.5786
+Epoch with Best Val Acc: 3

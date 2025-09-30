@@ -1,0 +1,47 @@
+
+CIFAR-10 CNN Model Comparison Report
+Generated: 2025-09-29 17:54:29
+======================================================================
+
+TRAINING CONFIGURATION:
+- Epochs: 3
+- Batch Size: 64
+- Dataset: CIFAR-10 (50,000 train + 10,000 test)
+- Optimizer: Adam
+- Loss Function: Categorical Crossentropy
+
+ORIGINAL 2-LAYER CNN RESULTS:
+========================================
+Architecture: Conv2D(32) → MaxPool → Conv2D(64) → MaxPool → Dense(64) → Dense(10)
+Parameters: 167,562
+Training Time: 27.62 seconds
+
+Performance:
+- Test Accuracy: 0.554400 (55.44%)
+- Test Loss: 1.248847
+- Final Training Accuracy: 0.467956
+- Final Validation Accuracy: 0.542000
+
+ENHANCED 9-LAYER CNN RESULTS:
+========================================
+Architecture: 3 Conv Blocks + 2 Dense Layers (with Dropout regularization)
+Parameters: 1,193,642
+Training Time: 117.11 seconds
+
+Performance:
+- Test Accuracy: 0.690500 (69.05%)
+- Test Loss: 0.887843
+- Final Training Accuracy: 0.629756
+- Final Validation Accuracy: 0.688200
+
+COMPARISON ANALYSIS:
+========================================
+Accuracy Improvement: +13.61 percentage points
+Parameter Increase: 7.1x
+Training Time Increase: 4.2x
+
+CONCLUSIONS:
+- The enhanced 9-layer CNN shows IMPROVED accuracy
+- Deeper architecture allows for more complex feature learning
+- Additional regularization (dropout) helps prevent overfitting
+- Trade-off between accuracy and computational cost
